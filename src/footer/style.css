@@ -1,10 +1,10 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Oswald', sans-serif;
+  
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;500;700&display=swap');
+
 
 .section{
     width: 100%;
@@ -87,5 +87,6 @@ a:hover{
         gap: 1;
         text-align: center;
         margin: 1em 0;
+        
     }
 }

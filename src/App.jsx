@@ -5,6 +5,7 @@ import React from 'react';
 import './App.css'
 import Header from "./components/Header";
 import Footer from "./footer";
+import RoutesApp from "./routes";
 
 
 
@@ -17,7 +18,7 @@ function App() {
 <div>
 
 <Header/>
-
+  <RoutesApp/>
  <Footer/>
 
    
