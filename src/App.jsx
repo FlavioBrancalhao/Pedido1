@@ -3,6 +3,7 @@ import { useEffect, useState } from "react"
 import  db  from '../src/services/firebase'
 import React from 'react';
 import './App.css'
+import Header from "./components/Header";
 
 
 function App() {
@@ -24,14 +25,19 @@ function App() {
 
   return (
 <div>
+<Header/>
    {pedidos.map(pedido => { 
     return(
+      
       <div>
+        
       <h1>Meus pedidos</h1>
       <div >
       <h2>{pedido.nome_cliente}</h2>
       </div>
+      
       </div>
+      
     )
    })}
    
