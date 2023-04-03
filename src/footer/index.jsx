@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import "./style.css"
-import '../../index.css'
+import '../index.css'
 
 function Footer(){
 

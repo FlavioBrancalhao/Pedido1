@@ -1,0 +1,101 @@
+.sec {
+  min-height: 80vh;
+  color: var(--principal);
+  background-image: url("../../assets/bg_bggenerator_com(1).png");
+}
+
+.block {
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background: #f6f5f400;
+  box-shadow: 20px 20px 60px #d1d0cf, -20px -20px 60px #ffffff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2em 0 0 0;
+}
+
+input{
+    width: 150px;
+    background-color: var(--principal);
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    padding: 0.5em;
+    color: white;
+    margin: 0.5em;
+}
+
+button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: var(--corBotao);
+    box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border: none;
+    text-transform: uppercase;
+    margin-top: 1em;
+   }
+   
+   button:after {
+    content: " ";
+    width: 0%;
+    height: 100%;
+    background: var(--principal);
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+    right: 0;
+   }
+   
+   button:hover::after {
+    right: auto;
+    left: 0;
+    width: 100%;
+
+   }
+   
+   button span {
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 8px 13px;
+    color: #fff;
+    font-size: 1.125em;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    z-index: 20;
+    transition: all 0.3s ease-in-out;
+
+   }
+   
+   button:hover span {
+    color: var(--corBotao);
+    animation: scaleUp 0.3s ease-in-out;
+   }
+   
+   @keyframes scaleUp {
+    0% {
+     transform: scale(1);
+    }
+   
+    50% {
+     transform: scale(0.95);
+    }
+   
+    100% {
+     transform: scale(1);
+    }
+   }
+   
